@@ -6,11 +6,15 @@ This repository contains sample code and tutorials to help you get started with 
 
 ## Getting Started
 
-To get started:
-1) Set your OpenAI API key as an environment variable. You can do this by running the following command in your terminal or command prompt:
+To your OpenAI API key as an environment variable. You can do this by running the following command in your terminal or command prompt:
 
-`export OPENAI_API_KEY=<your_api_key>`
+1) Open Terminal.
+2) Type `nano ~/.bashrc` to edit your bashrc file.
+3) Add the line `export OPENAI_API_KEY="<your-api-key>"` to the bottom of the file.
+4) Press ctrl + o to save the file.
+5) Press ctrl + x to exit nano.
+6) Type `source ~/.bashrc` to reload your bashrc file.
+7) To check if it has been set: `echo $OPENAI_API_KEY`
 
-To Check if it has been set:
-
-`echo $OPENAI_API_KEY`
+To set in your local conda env instead:
+`conda env config vars set OPENAI_API_KEY="<your-api-key>"`
